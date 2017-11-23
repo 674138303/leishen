@@ -1,0 +1,138 @@
+#login{
+	position: absolute;
+	background-color: #CCFFCC;
+	width:420px;
+	height:400px;
+	left: 481px;
+	top: 23px;
+	z-index:1000;
+	border-radius: 20px;
+}
+#login-head{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	margin:0 auto;
+	background-color: #CCCCCC;
+	height: 40px;
+	position: relative;
+}
+#login-head img{
+	float:left;
+}
+#login-head h3{
+	float:left;
+	line-height: 40px;
+	color: #CCFFFF;
+}
+#login-close{
+	margin-right:5px;
+	float: right;
+	height: 34px;
+	width:34px;
+	font-size:18px;
+	margin-top: 2px;
+	border-radius: 17px;
+	background-color: #CCCCCC;
+	outline:none;
+}
+#login form{
+	margin-top:20px;
+	margin-left:40px;
+}
+#login .inputbg{
+    padding-bottom: 15px;
+    position: relative;
+
+}
+#login .inputbg .labelbox{
+	height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    border: 1px solid #CC9966;
+	border-radius: 4px;
+	position: relative;
+}
+#login .inputbg .labelbox input{
+	width: 310px;
+    height: 20px;
+    line-height: 20px;
+    background: none;
+	border: 0 none;
+    padding: 10px;
+	display: inline-block;
+	outline:none;
+}
+#login .inputbg .labelbox #i1{
+	width: 15px;
+    height: 17px;
+	position: absolute;
+    right: 10px;
+    top: 13px;
+    background: url(../img/login_04.png) no-repeat;
+}
+#login .inputbg .labelbox #i2{
+	    width: 15px;
+	    height: 17px;
+		position: absolute;
+	    right: 10px;
+	    top: 13px;
+	    background: url(../img/login_04.png) no-repeat;
+}
+#verify{
+	width: 75px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid #000;
+    line-height: 28px;
+    text-align: center;
+    background: gray;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 26px;
+    position: absolute;
+    top: 6px;
+	left: 207px
+}
+#change{
+	position: absolute;
+    left: 290px;
+	top: 10px;
+	font-size:14px;
+	cursor: pointer;
+}
+#change:hover{
+	color: #f8a120;;
+}
+#login-btn{
+    background: #B9000F;
+    color: #fff;
+    border: 1px solid #B9000F;
+    display: block;
+    font-size: 16px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    width: 320px;
+    -webkit-appearance: none;
+}
+#ng-cookie-area{
+	height: 18px;
+	margin-top: 16px;
+	color: #999;
+    vertical-align: middle;
+    float: left;
+    cursor: pointer;
+    font-size: 12px;
+}
+#ng-link-area{
+	color: #999;
+    position: relative;
+    font-size:12px;
+    top: 16px;
+	left: 75px;
+}
+#third-login{
+	position: relative;
+    left: -157px;
+	top: 43px;
+}

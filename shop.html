@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品详情页</title>
+	<link rel="stylesheet" href="css/shop.css">
+	<script src = "js/jquery-1.11.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="font1/iconfont.css">
+	<script src="js/jquery.cookie.js"></script>
+	<script src = "js/shop.js"></script>
+
+</head>
+<body>
+	<div class = "site-topbar">
+		<div class = "container">
+			<div class = "topbar-nav">
+				<a href = "index.html" class = "snc-link snc-order">雷神官网</a>
+				<span class = "sep">|</span>
+				<a href = "#" class = "snc-link snc-order">雷神香港站</a>
+				<span class = "sep">|</span>
+				<a href = "#" class = "snc-link snc-order">校园团队</a>
+				<span class = "sep">|</span>
+				<a href = "#" class = "snc-link snc-order">雷神浏览器</a>
+				<span class = "sep">|</span>
+				<a class="thumbnail" href="#" style="color: #fff">招行分期购<span></span></a>
+				<span class = "sep">|</span>
+				<a class="thumbnail">商城移动版
+					<span id = "span1">
+						<img src = "img/yidong.png" />
+					</span>
+				</a>
+				<span class = "sep">|</span>
+				<a class="thumbnail" href="#">企业订购<span></span></a>	
+				<span class = "sep">|</span>
+				<a class="thumbnail" href="#">问题反馈<span></span></a>
+			</div>
+
+			<div class="topbar-cart" id="shopping_car">
+        		<a class="cart-mini" href="#">
+        		<span class = "iconfont icon-cart"></span>  购物车
+    				<span class="cart-span" id="">(0)</span>
+				</a>
+				<div id="cart-list" class  = "cart-menu" style="height: 85px;padding-top: 15px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+    				<p class="loading">购物车中还没有商品，赶紧选购吧！</p>
+ 
+				</div>
+			</div>
+
+			<div class="topbar-info" id="ECS_MEMBERZONE">
+				<a href="#" class="link">签到赢好礼</a>
+				<span class="sep">|</span>
+				<a class="link" href="login.html" rel="nofollow">登录</a>
+				<span class="sep">|</span>
+				<a class="link" href="register.html" rel="nofollow">注册</a>
+    		</div>
+		</div>
+	</div>
+	<div class = "site-header">
+		<div class = "container1">
+			<div class = "img1">
+				<a href = "#"><img src = "img/logozui.jpg"/></a>
+			</div>
+			<div class = "img2">
+				<a href = "#"><img src = "img/1504143770423500427.gif"/></a>
+			</div>
+			<div class = "header_search">
+				<form>
+					<input class="search-text" type="text"/>
+					<button class="search-btn"><span class = "iconfont icon-search" id = "span1"></span></button>
+					<div class="hot-words">
+                 		<a href="#" target="_blank">E5A</a>
+                   		<a href="#" target="_blank">Dino</a>         
+                   	</div>
+				</form>
+			</div>
+			<div class="header_mb20"></div>
+			<div class="feileinew">
+		        <span>全部分类</span>
+		        <img class="fr" src="img/fen.png" style="width: 15px;height: 7px">
+		    </div>
+		    <!-- 二级菜单要这么写 -->
+		    <div class = "header-nav">
+				<ul class = "nav-list">
+					<li class = "nav-item">
+						<a class = "link" href = "#"><span>911系列</span></a>
+						
+					</li>
+
+					<li class = "nav-item">
+						<a class = "link" href = "#"><span>ST系列</span></a>
+						
+					</li>
+
+					<li class = "nav-item">
+						<a class = "link" href = "#"><span>Dino系列</span></a>
+						
+					</li>
+
+					<li class = "nav-item">
+						<a class = "link" href = "#"><span>外设周边</span></a>
+						
+					</li>
+
+					<li class = "nav-item1">
+						<a class = "link" href = "#"><span>私人定制</span></a>
+					</li>
+
+					<li class = "nav-item1">
+						<a class = "link" href = "#"><span>分期专区</span></a>
+					</li>
+
+					<li class = "nav-item1">
+						<a class = "link" href = "#"><span>免费试用</span></a>
+					</li>
+
+					<li class = "nav-item1">
+						<a class = "link" href = "#"><span>雷域</span></a>
+					</li>
+
+					<li class = "nav-item1">
+						<a class = "link" href = "#"><span>服务</span></a>
+					</li>
+
+					<li class = "nav-item1">
+						<a class = "link" href = "#"><span>社区</span></a>
+					</li>
+				</ul>
+				<ul id = "problem">
+				</ul>
+		    </div>
+		    <div class = "clearfix"></div>
+			<ul id = "second">
+				<li class = "second-li"><a href = "#">游戏笔记本<span class = "iconfont icon-jiantouyou"></span></a>						
+				</li>
+				<li class = "second-li"><a href = "#">游戏台式机<span class = "iconfont icon-jiantouyou"></span></a></li>
+				<li class = "second-li"><a href = "#">游戏键盘/耳机<span class = "iconfont icon-jiantouyou"></span></a></li>
+				<li class = "second-li"><a href = "#">铠甲双肩背包<span class = "iconfont icon-jiantouyou"></span></a></li>
+				<li class = "second-li"><a href = "#">外设周边<span class = "iconfont icon-jiantouyou"></span></a></li>
+				<li class = "second-li"><a href = "#">VR专区<span class = "iconfont icon-jiantouyou"></span></a></li>
+				<li class = "second-li"><a href = "#">游戏专区<span class = "iconfont icon-jiantouyou"></span></a></li>
+				<li class = "second-li"><a href = "#">雷域商城<span class = "iconfont icon-jiantouyou"></span></a></li>
+				<li class = "second-li"><a href = "#">免费试用<span class = "iconfont icon-jiantouyou"></span></a></li>
+			</ul>
+			<div id = "outerdiv">
+			</div>
+		</div>		
+	</div>
+	<div style = "width: 1349px;height: 155px"></div>
+	<footer>
+		<div id="tab_one">
+			<div id="tab_one_1">
+				<a href="index.html">首页</a>
+				<code> > </code>
+				<a href="list.html">游戏台式机</a>
+				<code> > </code>
+				<a href="#">神谕</a>
+				<code> > </code>
+				<span>[高端定制]神谕701合金蜂巢版</span>
+
+			</div>
+		</div>
+		<div id="commodity">
+			<div id="photo">
+				<div id="pic_s">
+					<div id = "pic_s_move">
+						<div id="pic_s_1" class = "border"><img src="img/432_P_1487625271718.png" alt=""></div>
+						<div id="pic_s_2"><img src="img/432_P_1487625272137.png" alt=""></div>
+						<div id="pic_s_3"><img src="img/432_P_1487625272821.png" alt=""></div>
+						<div id="pic_s_4"><img src="img/432_P_1487625272549.png" alt=""></div>
+						<div id="pic_s_5"><img src="img/432_P_1487625272633.png" alt=""></div>
+						<div id="pic_s_5"><img src="img/432_P_1487798137726.png" alt=""></div>
+					</div>
+				</div>
+				<div id="pic_b">
+					<div class="mark_box">
+						<img src="img/432_P_1487625271718.png"/>
+					</div>
+					<div class='position_box'></div>
+				</div>
+				<div id = "pic_b_big">
+					<div id="b_box_all">
+						<img src="img/432_P_1487625271718.png""/>
+					</div>
+				</div>
+			</div>
+			<div id="info">
+				<h1>【高端定制】神谕701合金蜂巢版</h1>
+				<p>【高端定制水冷散热】7-15天发货， i7-6800K/索泰</p>
+				<p>GTX1080/X99-Phoenix/256G SSD/游戏UPC</p>
+				<div id="box__1">
+					<span>官方价格：￥</span>
+					<span>29999.0</span>
+				</div>
+				<div id="box__2">
+					<div>去手机购买 ∨</div>
+					<div id="erweima"><img src="img/api.png" alt=""></div>
+					<span>商品库存 ： 10</span></p>
+					<span>此商品赠送：可获 1400 雷魂</span>
+				</div>
+				<span id="fd">数量</span>
+				<div id="count">
+					<div id = "sub"> - </div>
+					<div id = "number"> 1 </div>
+					<div id = "add"> + </div>
+				</div>
+				<div id="count_btn">
+					<a href="shoppingcar.html" id = "take-in">加入购物车</a>
+					<a href="">喜欢</a>
+				</div>
+			</div>
+		</div>
+			
+		</div>
+		<div  id="commodity_2">
+			<div id="box__3">
+				<a href="">详情描述</a>
+				<a href="">规格参数</a>
+				<a href="">用户评价（0）</a>
+				<a href="">商品提问</a>
+			</div>
+		</div>
+		<div id="commodity_3">
+			<img src="img/1.jpg" alt="#">
+			<img src="img/2.jpg" alt="#">
+			<img src="img/21.jpg" alt="#">
+			<img src="img/3.jpg" alt="#">
+			<img src="img/4.jpg" alt="#">
+			<img src="img/5.jpg" alt="#">
+			<img src="img/6.jpg" alt="#">
+			<img src="img/7.jpg" alt="#">
+			<img src="img/8.jpg" alt="#">
+			<img src="img/9.jpg" alt="#">
+			<img src="img/10.jpg" alt="#">
+			<img src="img/101.jpg" alt="#">
+			<img src="img/102.jpg" alt="#">
+			<img src="img/103.jpg" alt="#">
+		</div>
+	</footer>
+	<div id = "footer">
+			<div class="footer-service">
+	        	<ul>
+	            	<li style = "border-left:0">
+	                	<a href="#">
+	                    	<i class="iconfont"><img src="img/T01.png"></i>1年免费保修
+	                    </a>
+	                </li>
+	            	<li>
+	                	<a href="#">
+	                    	<i class="iconfont"><img src="img/T02.png"></i>7天无理由退货
+	                    </a>
+	                </li>
+	            	<li>
+	                	<a href="#">
+	                    	<i class="iconfont"><img src="img/T03.png"></i>15天免费换货
+	                    </a>
+	                </li>
+	            	<li>
+	                	<a href="#">
+	                    	<i class="iconfont"><img src="img/T04.png"></i>顺丰包邮
+	                    </a>
+	                </li>
+	            	<li>
+	                	<a href="#">
+	                    	<i class="iconfont"><img src="img/T05.png"></i>130余家售后网点
+	                    </a>
+	                </li>
+	            </ul>
+        	</div>
+        	<div class="footer-links">
+	            <dl class="col-links">
+				    <dt>帮助中心</dt>
+		            <dd>
+				        <a href="#">购物指南</a>
+				    </dd>
+				    <dd>
+				        <a href="#">支付方式</a>
+				    </dd>
+				    <dd>
+				        <a href="#">配送方式</a>
+				    </dd>
+		        </dl>
+	            <dl class="col-links">
+				    <dt>服务支持</dt>
+		            <dd>
+				        <a href="#">保修政策</a>
+				    </dd>
+				        <dd>
+				        <a href="#">下载中心</a>
+				    </dd>
+				        <dd>
+				        <a href="#">服务标准</a>
+				    </dd>
+		        </dl>
+	            <dl class="col-links">
+				    <dt>关于雷神</dt>
+		            <dd>
+				        <a href="#">公司介绍</a>
+					</dd>
+				            <dd>
+				        <a href="#">联系我们</a>
+				      </dd>
+				            <dd>
+				        <a href="#">加入雷神</a>
+				      </dd>
+		        </dl>
+	            <dl class="col-links">
+				    <dt>品牌资讯</dt>
+		            <dd>
+				        <a href="#">营业执照</a>
+				      </dd>
+				            <dd>
+				        <a href="#">新闻中心</a>
+				      </dd>
+				            <dd>
+				        <a href="#">版权声明</a>
+				      </dd>
+	            </dl>
+				                        
+	            <div class="col-links">
+	                <p style=" font-size:14px; color:#424242; line-height:1.25; font-weight:normal; padding-bottom:26px;">新浪微博</p>
+	                <a><img src="img/xinlang.jpg" width="70px"></a>
+	            </div>
+	            <div class="col-links">
+	                <p style=" font-size:14px; color:#424242; line-height:1.25; font-weight:normal; padding-bottom:26px;">雷神订阅号</p>
+	                <a><img src="img/lsdy.jpg" width="70px"></a>
+	            </div>
+	            <div class="col-contact">
+	                <p class="phone">4006-999-999</p>
+	                <p>周一至周日 8:00-18:00<br></p>             
+	                <a class="btn1" href="#">24小时在线客服</a>
+	            </div>
+		    </div>
+	</div>
+	<div class="site-info">
+		<div class="container">
+	        <div class="info-text">
+	            <p>© 2014-2017 www.leishen.cn 青岛雷神科技股份有限公司 版权所有 全国免费咨询电话：4006-999-999   鲁ICP备14015908号-1</p>
+	        </div>
+	        <div class="info-links">
+	            <img src = "img/stat.png"/>
+	            <img src = "img/sm_124x47.png" style = "margin-right: 20px;margin-left: 20px;"/>
+	            <img src = "img/yingye.jpg"/>
+	        </div>
+		</div>
+	</div>
+</body>
+</html>

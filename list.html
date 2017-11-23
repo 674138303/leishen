@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script src = "js/jquery-1.11.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+		<link href = "css/list.css" type = "text/css" rel = "stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="font1/iconfont.css">
+		<script src = "js/list.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script>
+
+		</script>
+	</head>
+	<body>
+		<div class = "site-topbar">
+			<div class = "container">
+				<div class = "topbar-nav">
+					<a href = "index.html" class = "snc-link snc-order">雷神官网</a>
+					<span class = "sep">|</span>
+					<a href = "#" class = "snc-link snc-order">雷神香港站</a>
+					<span class = "sep">|</span>
+					<a href = "#" class = "snc-link snc-order">校园团队</a>
+					<span class = "sep">|</span>
+					<a href = "#" class = "snc-link snc-order">雷神浏览器</a>
+					<span class = "sep">|</span>
+					<a class="thumbnail" href="#" style="color: #fff">招行分期购<span></span></a>
+					<span class = "sep">|</span>
+					<a class="thumbnail">商城移动版
+						<span id = "span1">
+							<img src = "img/yidong.png" />
+						</span>
+					</a>
+					<span class = "sep">|</span>
+					<a class="thumbnail" href="#">企业订购<span></span></a>	
+					<span class = "sep">|</span>
+					<a class="thumbnail" href="#">问题反馈<span></span></a>
+				</div>
+
+				<div class="topbar-cart" id="shopping_car">
+            		<a class="cart-mini" href="#">
+            		<span class = "iconfont icon-cart"></span>  购物车
+	    				<span class="cart-span" id="">(0)</span>
+					</a>
+					<div id="cart-list" class  = "cart-menu" style="height: 85px;padding-top: 15px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+	    				<p class="loading">购物车中还没有商品，赶紧选购吧！</p>
+     
+					</div>
+				</div>
+
+				<div class="topbar-info" id="ECS_MEMBERZONE">
+					<a href="#" class="link">签到赢好礼</a>
+					<span class="sep">|</span>
+					<a class="link" href="login.html" rel="nofollow">登录</a>
+					<span class="sep">|</span>
+					<a class="link" href="register.html" rel="nofollow">注册</a>
+        		</div>
+			</div>
+		</div>
+		<div class = "site-header">
+			<div class = "container1">
+				<div class = "img1">
+					<a href = "#"><img src = "img/logozui.jpg"/></a>
+				</div>
+				<div class = "img2">
+					<a href = "#"><img src = "img/1504143770423500427.gif"/></a>
+				</div>
+				<div class = "header_search">
+					<form>
+						<input class="search-text" type="text"/>
+						<button class="search-btn"><span class = "iconfont icon-search" id = "span1"></span></button>
+						<div class="hot-words">
+	                 		<a href="#" target="_blank">E5A</a>
+	                   		<a href="#" target="_blank">Dino</a>         
+	                   	</div>
+					</form>
+				</div>
+				<div class="header_mb20"></div>
+				<div class="feileinew">
+			        <span>全部分类</span>
+			        <img class="fr" src="img/fen.png" style="width: 15px;height: 7px">
+			    </div>
+			    <!-- 二级菜单要这么写 -->
+			    <div class = "header-nav">
+					<ul class = "nav-list">
+						<li class = "nav-item">
+							<a class = "link" href = "#"><span>911系列</span></a>
+							
+						</li>
+
+						<li class = "nav-item">
+							<a class = "link" href = "#"><span>ST系列</span></a>
+							
+						</li>
+
+						<li class = "nav-item">
+							<a class = "link" href = "#"><span>Dino系列</span></a>
+							
+						</li>
+
+						<li class = "nav-item">
+							<a class = "link" href = "#"><span>外设周边</span></a>
+							
+						</li>
+
+						<li class = "nav-item1">
+							<a class = "link" href = "#"><span>私人定制</span></a>
+						</li>
+
+						<li class = "nav-item1">
+							<a class = "link" href = "#"><span>分期专区</span></a>
+						</li>
+
+						<li class = "nav-item1">
+							<a class = "link" href = "#"><span>免费试用</span></a>
+						</li>
+
+						<li class = "nav-item1">
+							<a class = "link" href = "#"><span>雷域</span></a>
+						</li>
+
+						<li class = "nav-item1">
+							<a class = "link" href = "#"><span>服务</span></a>
+						</li>
+
+						<li class = "nav-item1">
+							<a class = "link" href = "#"><span>社区</span></a>
+						</li>
+					</ul>
+					<ul id = "problem">
+					</ul>
+			    </div>
+			    <div class = "clearfix"></div>
+				<ul id = "second">
+					<li class = "second-li"><a href = "#">游戏笔记本<span class = "iconfont icon-jiantouyou"></span></a>						
+					</li>
+					<li class = "second-li"><a href = "#">游戏台式机<span class = "iconfont icon-jiantouyou"></span></a></li>
+					<li class = "second-li"><a href = "#">游戏键盘/耳机<span class = "iconfont icon-jiantouyou"></span></a></li>
+					<li class = "second-li"><a href = "#">铠甲双肩背包<span class = "iconfont icon-jiantouyou"></span></a></li>
+					<li class = "second-li"><a href = "#">外设周边<span class = "iconfont icon-jiantouyou"></span></a></li>
+					<li class = "second-li"><a href = "#">VR专区<span class = "iconfont icon-jiantouyou"></span></a></li>
+					<li class = "second-li"><a href = "#">游戏专区<span class = "iconfont icon-jiantouyou"></span></a></li>
+					<li class = "second-li"><a href = "#">雷域商城<span class = "iconfont icon-jiantouyou"></span></a></li>
+					<li class = "second-li"><a href = "#">免费试用<span class = "iconfont icon-jiantouyou"></span></a></li>
+				</ul>
+				<div id = "outerdiv">
+				</div>
+			</div>		
+		</div>
+		<div style = "width: 1349px;height: 155px"></div>
+		<!-- 灰色头部分 -->
+		<div id="breadcrumbs">
+			<div class="container">
+		    	<a href="index.html">首页</a>
+		    	<code>&gt;</code> 
+		    	<a href="#">游戏台式机</a>    
+		    </div>
+		</div>
+		<!-- 灰色内容部分 -->
+		<div id = "content">
+			<div class = "container">
+				<!-- li选择部分 -->
+				<div id = "order-list-box">
+					<ul id="order-list">
+			            <li style = "padding-left:0;border:0">
+			            	<span>销量</span>
+			            </li>
+			            <li class=""><span class="">价格</span></li>
+			            <li class=""><span class="">上架时间</span></li>
+			        </ul>
+			        <ul id="type-list">
+				        <li style = "cursor: default">显示方式：</li>
+				        <li><img src="img/display_mode_list.gif" alt=""></li>
+				        <li><img src="img/display_mode_grid_act.gif" alt=""></li>
+				        <li><img src="img/display_mode_text.gif" alt=""></li>&nbsp;&nbsp;
+				    </ul>
+				</div>
+				<!-- 正式内容 -->
+				<div id = "goods-list">
+					<!-- 第一个 -->
+					<!-- <div class="goods-item">
+						<a href="#" class="btn-like"><i class="iconfont icon-favorites"></i><span class = "span1">收藏</span></a>
+						<a href="#" class="btn-buy"><span class = "span2">购买</span><i class="iconfont icon-cart"></i></a>
+	                    <div class="figure-img">
+	                        <a href="#"><img src="img/432_thumb_G_1487798137583.jpg" class="goodsimg"></a>
+	                    </div>
+	                    <h2 class="title"><a href="#">雷神神耀A505游戏主机</a></h2>
+	              		<p class="desc">i5-7500/七彩虹GTX1050Ti/微星B250M-F主板/128G SSD/游戏UPC</p>
+	                    <p class="price">官方价<font class="shop_s">3899.0</font></p>
+	                    <div class="thumbs">
+	                        <div style="width:212px;margin:0 auto;">
+	                            <ul class="thumb-list">
+	                                <li class="active">
+	                                    <a><img src="img/432_thumb_G_1487798137583.jpg" width="34" height="34"></a>
+	                                </li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                </div> -->
+
+
+	                
+				</div>
+				<div class = "clearfix">
+					<div id="pager" class="pagebar">
+	  					<span class="f_l">总计 <b>20</b>  个记录</span> 
+	                  	<span class = "page_now">1</span>
+	                  	<span class = "page_now">2</span>
+	                  	<span class = "page_now">3</span>           
+	  				</div>
+  				</div>
+			</div>
+			<div style = "width:1250px;height: 887px;"></div>
+			<!-- 为你推荐 -->
+			<div id = "recommand">
+				<h2><span>为你推荐</span></h2>
+				<div id = "recommand-ul-div">
+					<ul id = "recommand-ul1">
+						<!-- 第一个 -->
+						<!-- <li>
+							<dl>
+								<dt><img src = "img/508_thumb_G_1504054898187.jpg"/></dt>
+								<dd class = "recommand-name"><a href="#">雷神Force F31游戏台式主机</a></dd>
+								<dd class = "recommand-price">4999.0</dd>
+							</dl>
+						</li> -->
+					</ul>
+				</div>
+				<div id="xm-pagers-wrapper">
+		            <ul id="xm-pagers">
+		            	<li class="pager-active">1</li>
+		            	<li class="">2</li>
+		            </ul>
+		        </div>
+			</div>
+		</div>
+		<!-- 结尾 -->
+		<div id = "footer">
+			<div class="footer-service">
+	        	<ul>
+	            	<li style = "border-left:0">
+	                	<a href="#">
+	                    	<i class="iconfont"><img src="img/T01.png"></i>1年免费保修
+	                    </a>
+	                </li>
+	            	<li>
+	                	<a href="#">
+	                    	<i class="iconfont"><img src="img/T02.png"></i>7天无理由退货
+	                    </a>
+	                </li>
+	            	<li>
+	                	<a href="#">
+	                    	<i class="iconfont"><img src="img/T03.png"></i>15天免费换货
+	                    </a>
+	                </li>
+	            	<li>
+	                	<a href="#">
+	                    	<i class="iconfont"><img src="img/T04.png"></i>顺丰包邮
+	                    </a>
+	                </li>
+	            	<li>
+	                	<a href="#">
+	                    	<i class="iconfont"><img src="img/T05.png"></i>130余家售后网点
+	                    </a>
+	                </li>
+	            </ul>
+        	</div>
+        	<div class="footer-links">
+	            <dl class="col-links">
+				    <dt>帮助中心</dt>
+		            <dd>
+				        <a href="#">购物指南</a>
+				    </dd>
+				    <dd>
+				        <a href="#">支付方式</a>
+				    </dd>
+				    <dd>
+				        <a href="#">配送方式</a>
+				    </dd>
+		        </dl>
+	            <dl class="col-links">
+				    <dt>服务支持</dt>
+		            <dd>
+				        <a href="#">保修政策</a>
+				    </dd>
+				        <dd>
+				        <a href="#">下载中心</a>
+				    </dd>
+				        <dd>
+				        <a href="#">服务标准</a>
+				    </dd>
+		        </dl>
+	            <dl class="col-links">
+				    <dt>关于雷神</dt>
+		            <dd>
+				        <a href="#">公司介绍</a>
+					</dd>
+				            <dd>
+				        <a href="#">联系我们</a>
+				      </dd>
+				            <dd>
+				        <a href="#">加入雷神</a>
+				      </dd>
+		        </dl>
+	            <dl class="col-links">
+				    <dt>品牌资讯</dt>
+		            <dd>
+				        <a href="#">营业执照</a>
+				      </dd>
+				            <dd>
+				        <a href="#">新闻中心</a>
+				      </dd>
+				            <dd>
+				        <a href="#">版权声明</a>
+				      </dd>
+	            </dl>
+				                        
+	            <div class="col-links">
+	                <p style=" font-size:14px; color:#424242; line-height:1.25; font-weight:normal; padding-bottom:26px;">新浪微博</p>
+	                <a><img src="img/xinlang.jpg" width="70px"></a>
+	            </div>
+	            <div class="col-links">
+	                <p style=" font-size:14px; color:#424242; line-height:1.25; font-weight:normal; padding-bottom:26px;">雷神订阅号</p>
+	                <a><img src="img/lsdy.jpg" width="70px"></a>
+	            </div>
+	            <div class="col-contact">
+	                <p class="phone">4006-999-999</p>
+	                <p>周一至周日 8:00-18:00<br></p>             
+	                <a class="btn1" href="#">24小时在线客服</a>
+	            </div>
+		    </div>
+		</div>
+		<div class="site-info">
+			<div class="container">
+		        <div class="info-text">
+		            <p>© 2014-2017 www.leishen.cn 青岛雷神科技股份有限公司 版权所有 全国免费咨询电话：4006-999-999   鲁ICP备14015908号-1</p>
+		        </div>
+		        <div class="info-links">
+		            <img src = "img/stat.png"/>
+		            <img src = "img/sm_124x47.png" style = "margin-right: 20px;margin-left: 20px;"/>
+		            <img src = "img/yingye.jpg"/>
+		        </div>
+			</div>
+		</div>
+	</body>
+</html>

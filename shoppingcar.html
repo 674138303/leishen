@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src = "js/jquery-1.11.1.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<link href = "css/shoppingcar.css" type = "text/css" rel = "stylesheet"/>
+	<script src = "js/shoppingcar.js"></script>
+</head>
+
+<body>
+	<div id = "shoppingcar-head">
+		<div class = "container">
+			<div class="header-logo">
+				<a href="#" class="logo">
+					<img src="img/logo.gif">
+				</a>
+			</div>
+			<div class="header-title">
+				<h2>我的购物车<span id="selectedCount">0</span></h2>
+			</div>
+			<div class="topbar-info" id="ECS_MEMBERZONE">
+				<a href="#" class="link">签到赢好礼</a>
+				<span class="sep">|</span>
+				<a class="link" href="login.html" rel="nofollow">登录</a>
+				<span class="sep">|</span>
+				<a class="link" href="register.html" rel="nofollow">注册</a>
+    		</div>
+		</div>
+	</div>
+	<div id = "empty">
+		<!-- <div class="container">
+	        <div class="cart-empty">
+	        	<h2>您的购物车还是空的!</h2>
+	            <a href="index.html" class="btn btn-primary">马上去购物</a>
+        	</div>
+        </div> -->
+	</div>
+	<div id = "cart-box">
+		<div class = "container">
+			<div class = "cart-goods-list">
+				<div class="list-head"> 
+	                <div class="col-img" id="itemsnum-top">图片</div> 
+	                <div class="col-name">商品名称</div>
+	                <div class="col-price">单价</div>
+	                <div class="col-num">数量</div>
+	                <div class="col-total">小计</div> 
+	                <div class="col-action">操作</div>
+	            </div>
+	            <div class= "list-body">
+	            	<!-- <div class = "item-box">
+	            		<div class = "item-table">
+	            			<div class = "col-img">
+	            				<img src = "img/432_thumb_G_1487798137583.jpg"/>
+	            			</div>
+	            			<div class = "col-name">
+	            				<h3 class = "name">雷神神耀A505游戏主机</h3>
+	            			</div>
+							<div class = "col-price">3899.00</div>
+							<div class = "col-num">
+								<button class = "left">-</button>
+								<input type = "text" value="1" class = "col-num-inp">
+								<button class = "right">+</button>
+							</div>
+							<div class = "col-total">
+								<span class="col-total-change">3899.00</span>
+							</div>
+							<div class="col-action">x</div>
+	            		</div>
+	            	</div> -->
+	            </div>
+	            <p class="clear-cart"> <a id="del-all" href="#">清空购物车</a> </p>
+				<div class="cart-bar">
+	                <div class="section-left">
+	                	<a class="back-shopping" href="list.html">继续购物</a>
+	                </div>
+	                <span class="total-price">&nbsp;&nbsp;&nbsp;合计：<b id="totalSkuPrice">3899.00</b></span>
+	                <a href="#" class="btn-primary">去结算</a>
+	            </div>
+
+			</div>
+		</div>
+	</div>
+	<div id = "footer">
+			<div class="footer-service">
+	        	<ul>
+	            	<li style = "border-left:0">
+	                	<a href="#">
+	                    	<i class="iconfont"><img src="img/T01.png"></i>1年免费保修
+	                    </a>
+	                </li>
+	            	<li>
+	                	<a href="#">
+	                    	<i class="iconfont"><img src="img/T02.png"></i>7天无理由退货
+	                    </a>
+	                </li>
+	            	<li>
+	                	<a href="#">
+	                    	<i class="iconfont"><img src="img/T03.png"></i>15天免费换货
+	                    </a>
+	                </li>
+	            	<li>
+	                	<a href="#">
+	                    	<i class="iconfont"><img src="img/T04.png"></i>顺丰包邮
+	                    </a>
+	                </li>
+	            	<li>
+	                	<a href="#">
+	                    	<i class="iconfont"><img src="img/T05.png"></i>130余家售后网点
+	                    </a>
+	                </li>
+	            </ul>
+        	</div>
+        	<div class="footer-links">
+	            <dl class="col-links">
+				    <dt>帮助中心</dt>
+		            <dd>
+				        <a href="#">购物指南</a>
+				    </dd>
+				    <dd>
+				        <a href="#">支付方式</a>
+				    </dd>
+				    <dd>
+				        <a href="#">配送方式</a>
+				    </dd>
+		        </dl>
+	            <dl class="col-links">
+				    <dt>服务支持</dt>
+		            <dd>
+				        <a href="#">保修政策</a>
+				    </dd>
+				        <dd>
+				        <a href="#">下载中心</a>
+				    </dd>
+				        <dd>
+				        <a href="#">服务标准</a>
+				    </dd>
+		        </dl>
+	            <dl class="col-links">
+				    <dt>关于雷神</dt>
+		            <dd>
+				        <a href="#">公司介绍</a>
+					</dd>
+				            <dd>
+				        <a href="#">联系我们</a>
+				      </dd>
+				            <dd>
+				        <a href="#">加入雷神</a>
+				      </dd>
+		        </dl>
+	            <dl class="col-links">
+				    <dt>品牌资讯</dt>
+		            <dd>
+				        <a href="#">营业执照</a>
+				      </dd>
+				            <dd>
+				        <a href="#">新闻中心</a>
+				      </dd>
+				            <dd>
+				        <a href="#">版权声明</a>
+				      </dd>
+	            </dl>
+				                        
+	            <div class="col-links">
+	                <p style=" font-size:14px; color:#424242; line-height:1.25; font-weight:normal; padding-bottom:26px;">新浪微博</p>
+	                <a><img src="img/xinlang.jpg" width="70px"></a>
+	            </div>
+	            <div class="col-links">
+	                <p style=" font-size:14px; color:#424242; line-height:1.25; font-weight:normal; padding-bottom:26px;">雷神订阅号</p>
+	                <a><img src="img/lsdy.jpg" width="70px"></a>
+	            </div>
+	            <div class="col-contact">
+	                <p class="phone">4006-999-999</p>
+	                <p>周一至周日 8:00-18:00<br></p>             
+	                <a class="btn1" href="#">24小时在线客服</a>
+	            </div>
+		    </div>
+	</div>
+	<div class="site-info">
+		<div class="container">
+	        <div class="info-text">
+	            <p>© 2014-2017 www.leishen.cn 青岛雷神科技股份有限公司 版权所有 全国免费咨询电话：4006-999-999   鲁ICP备14015908号-1</p>
+	        </div>
+	        <div class="info-links">
+	            <img src = "img/stat.png"/>
+	            <img src = "img/sm_124x47.png" style = "margin-right: 20px;margin-left: 20px;"/>
+	            <img src = "img/yingye.jpg"/>
+	        </div>
+		</div>
+	</div>
+</body>
+</html>
